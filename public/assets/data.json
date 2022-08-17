@@ -1,0 +1,42 @@
+[
+  {
+    "id": "prod-1",
+    "title": "Times rainbow watch",
+    "thumbnail": "assets/watch1.jpg"
+  },
+  {
+    "id": "prod-2",
+    "title": "Times rainbow watch",
+    "thumbnail": "assets/watch2.jpg"
+  },
+  {
+    "id": "prod-3",
+    "title": "Times rainbow watch",
+    "thumbnail": "assets/watch3.jpg"
+  },
+  {
+    "id": "prod-4",
+    "title": "Times rainbow watch",
+    "thumbnail": "assets/watch4.jpg"
+  },
+  {
+    "id": "prod-5",
+    "title": "Times rainbow watch",
+    "thumbnail": "assets/watch5.jpg"
+  },
+  {
+    "id": "prod-6",
+    "title": "Times rainbow watch",
+    "thumbnail": "assets/watch6.jpg"
+  },
+  {
+    "id": "prod-7",
+    "title": "Times rainbow watch",
+    "thumbnail": "assets/watch7.jpg"
+  },
+  {
+    "id": "prod-8",
+    "title": "Times rainbow watch",
+    "thumbnail": "assets/watch8.jpg"
+  }
+]

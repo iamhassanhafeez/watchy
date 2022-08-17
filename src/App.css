@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+}
+/*Predefine Custom classes for adding functionality*/
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Justify Content*/
+.justify-center {
+  justify-content: center;
+}
+.justify-left {
+  justify-content: flex-start;
+}
+.justify-right {
+  justify-content: flex-end;
+}
+.justify-space-between {
+  justify-content: space-between;
+}
+.justify-space-evenly {
+  justify-content: space-evenly;
+}
+.justify-space-around {
+  justify-content: space-around;
+}
+
+/*Align items*/
+.align-items-center {
+  align-items: center;
+}
+.align-items-left {
+  align-items: flex-start;
+}
+.align-items-right {
+  align-items: flex-end;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.ma {
+  margin: auto;
+}
+
+.App-header {
+  height: 50px;
+  background-color: #222222;
+}
+.topbar {
+  color: #fff;
+}
+.w33 {
+  width: 33%;
+}
+.cart-icon img {
+  fill: #fff;
+}
+.shop {
+  width: 850px;
+}
+.product-item {
+  width: 200px;
+  position: relative;
+}
+.product-thumbnail {
+  width: 200px;
+}
+.product-title {
+  font-size: 14px;
+}
+.products-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.add-to-cart {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: all 0.2s ease-in-out;
+}
+.add-to-cart:hover {
+  color: darkcyan;
+  transform: scale(2);
+}
