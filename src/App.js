@@ -1,6 +1,6 @@
 import "./App.css";
 import { Provider } from "react-redux";
-import store from "./redux/store";
+import { store } from "./app/store";
 
 //====== Import Components
 import Header from "./components/Header/Header";

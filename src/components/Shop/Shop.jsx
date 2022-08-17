@@ -1,35 +1,41 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { getProduct } from "../../redux/product/productActions";
+import axios from "axios";
+
 import Product from "./Product";
+import {
+  decreaseValue,
+  getAllProducts,
+} from "../../features/product/productSlice";
 
 function Shop() {
-  const allProducts = useSelector((state) => state.allProducts);
+  const value = useSelector((state) => state.product.value);
+  const products = useSelector((state) => state.product.products);
+
   const dispatch = useDispatch();
-  const [products, setProducts] = useState([]);
+
   useEffect(() => {
     axios
       .get("assets/data.json")
       .then((res) => {
-        setProducts(res?.data);
+        dispatch(getAllProducts(res.data));
         console.log("below are products");
       })
       .catch(console.error());
   }, []);
   console.log(products);
-  console.log(allProducts);
   return (
     <div>
       <div className="shop ma products-grid">
-        <button onClick={() => dispatch(getProduct())}>click me</button>
-        {products.map((product) => (
-          <Product
-            title={product?.title}
-            key={product?.id}
-            thumbnail={product?.thumbnail}
-          />
-        ))}
+        <button onClick={() => dispatch(decreaseValue())}>Clicke me</button>
+        <h2>{value}</h2>
+        {/* {products.map((product) => (
+              <Product
+                title={product?.title}
+                key={product?.id}
+                thumbnail={product?.thumbnail}
+              />
+            ))} */}
       </div>
     </div>
   );
